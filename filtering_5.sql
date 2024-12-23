@@ -1,0 +1,3 @@
+-- 1. I want to list 5 brand branch_name that has high rating but lowest number of transaction from table newest_agg_table
+-- 2. with rating_cabang, count(distinct(transactiond_id)
+SELECT branch_id, branch_name, rating_cabang, COUNT(DISTINCT transaction_id) as Numb_Transactions FROM `third-wharf-444813-i5`.`Kf_data`.`newest_agg_table` GROUP BY branch_name,rating_cabang, branch_id ORDER BY rating_cabang DESC, COUNT(DISTINCT transaction_id) ASC LIMIT 5;
