@@ -16,6 +16,6 @@ this table consists of product details such as product_id, product_name, product
 
 From the tables above, I made an agregate table. using query 
 
-'''
+```
 CREATE TABLE `third-wharf-444813-i5.Kf_data.kf_agg_table` AS SELECT kf_final_transaction.transaction_id, kf_final_transaction.date, kf_final_transaction.branch_id, kf_kantor_cabang.branch_name, kf_kantor_cabang.kota, kf_kantor_cabang.provinsi, kf_kantor_cabang.rating AS rating_cabang, kf_final_transaction.customer_name FROM `third-wharf-444813-i5`.`Kf_data`.`kf_final_transaction` AS kf_final_transaction LEFT OUTER JOIN `third-wharf-444813-i5`.`Kf_data`.`kf_kantor_cabang` AS kf_kantor_cabang ON kf_final_transaction.branch_id = kf_kantor_cabang.branch_id;
-'''
+```
