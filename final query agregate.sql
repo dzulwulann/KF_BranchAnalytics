@@ -1,5 +1,3 @@
--- 1. I want to add columns from kf_product to kf_agg_table, the columns are product_id, product_name, price as actual_price
--- 2. I mean, I want to add that columns in kf_agg_table
 WITH disc_price AS (
   SELECT 
     transaction_id,
