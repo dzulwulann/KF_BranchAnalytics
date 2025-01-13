@@ -38,8 +38,8 @@ The aggregated data is visualized in a dashboard, showcasing:
 - Sales performance trends over the years.
 - Branch-wise comparisons.
 - Key performance indicators (KPIs) such as gross profit and customer ratings.
-<br>
-This is link for the dashboard [view dashboard](https://lookerstudio.google.com/s/nlZRwfy1oes)
+
+This is link for the dashboard [view dashboard](https://lookerstudio.google.com/s/nlZRwfy1oes)<br>
 
 ## How to Use
 1. Clone the repository.
