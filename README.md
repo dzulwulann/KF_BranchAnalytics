@@ -29,36 +29,16 @@ The project utilizes the following four datasets:
 ## Aggregating Data
 To streamline the analysis and reduce query execution time, the data was aggregated in stages. Below are the steps:
 
-### Step 1: Initial Aggregation
-A new table was created using a left outer join to combine `kf_final_transaction` with `kf_kantor_cabang`. This step enriched the transaction data with branch details.
+### Query
+A new table was created using a left outer join to combine `kf_final_transaction`, `kf_kantor_cabang` and `kf_product`. Using subquery to combine and calculate `nett_profit`, `nett_sales` and also determinine the amount of `discount_precentage`.
 
-```sql
-CREATE TABLE `third-wharf-444813-i5.Kf_data.kf_agg_table` AS 
-SELECT 
-  kf_final_transaction.transaction_id, 
-  kf_final_transaction.date, 
-  kf_final_transaction.branch_id, 
-  kf_kantor_cabang.branch_name, 
-  kf_kantor_cabang.kota, 
-  kf_kantor_cabang.provinsi, 
-  kf_kantor_cabang.rating AS rating_cabang, 
-  kf_final_transaction.customer_name 
-FROM `third-wharf-444813-i5`.`Kf_data`.`kf_final_transaction` AS kf_final_transaction 
-LEFT OUTER JOIN `third-wharf-444813-i5`.`Kf_data`.`kf_kantor_cabang` AS kf_kantor_cabang 
-ON kf_final_transaction.branch_id = kf_kantor_cabang.branch_id;
-```
-
-### Step 2: Final Aggregation
-Further aggregation was performed using SQL queries stored in the file **`final_query_aggregate.sql`**. This step involved:
-- Creating a Common Table Expression (CTE) to calculate discounted prices.
-- Determining the gross profit percentage.
 
 ## Dashboard
 The aggregated data is visualized in a dashboard, showcasing:
 - Sales performance trends over the years.
 - Branch-wise comparisons.
 - Key performance indicators (KPIs) such as gross profit and customer ratings.
-This is the for the dashboard 
+This is the for the dashboard [view dashboard](https://lookerstudio.google.com/s/nlZRwfy1oes)
 
 ## How to Use
 1. Clone the repository.
