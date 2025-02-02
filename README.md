@@ -39,6 +39,8 @@ The aggregated data is visualized in a dashboard, showcasing:
 - Branch-wise comparisons.
 - Key performance indicators (KPIs) such as gross profit and customer ratings.
 
+![Alt text](/image/dashboard.png)
+
 This is link for the dashboard [view dashboard](https://lookerstudio.google.com/s/nlZRwfy1oes)<br>
 
 ## How to Use
