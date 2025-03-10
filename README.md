@@ -48,13 +48,25 @@ This is link for the dashboard [view dashboard](https://lookerstudio.google.com/
 - Total net sales: 321.2B
 - Total transactions: 672,458
 - Total net profit: 72.6B
+
 ✅ Top Performing Provinces:
 Jawa Barat leads in both total transactions and net sales
+
 ✅ Low-Performing Branches:
 Some branches have high ratings but low transaction volumes, indicating strong customer satisfaction but weak traffic.
+
 ✅ Trends & Seasonality:
 Revenue by quarter indicates steady growth from 2020 to 2023, with spikes in specific quarters.
 
+## Business Recomendations
+🔹 Boost Sales in High-Rating, Low-Transaction Branches
+
+🔹 Optimize Inventory & supply chain
+   - Improve supply chain efficiency in low-profit regions to reduce cots
+
+🔹 Improve outreach and accesibility in lower-performing areas
+
+🔹Expand operations in high-demand regions like **Jawa Barat & DKI Jakarta**
 ## How to Use
 1. Clone the repository.
 2. Review the SQL scripts provided in the `/queries` directory.
